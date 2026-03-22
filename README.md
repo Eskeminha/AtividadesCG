@@ -22,4 +22,4 @@ Tarefa - Configuração do ambiente de desenvolvimento e execução do primeiro 
 - `Z` — rotaciona no eixo Z
 - `ESC` — fecha a janela
 
-![Print da execução](Hello3D/print01.png)
+![Print da execução](print01.png)
