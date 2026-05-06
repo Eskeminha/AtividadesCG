@@ -13,6 +13,7 @@ FetchContent_Declare(
   glfw
   GIT_REPOSITORY https://github.com/glfw/glfw.git
   GIT_TAG 3.4  # Define a versão desejada da GLFW
+  UPDATE_DISCONNECTED TRUE
 )
 
 # Configura o FetchContent para baixar a GLM automaticamente
@@ -20,6 +21,7 @@ FetchContent_Declare(
   glm
   GIT_REPOSITORY https://github.com/g-truc/glm.git
   GIT_TAG master  # Define a versão desejada da GLM
+  UPDATE_DISCONNECTED TRUE
 )
 
 # Faz o download e compila as bibliotecas
@@ -30,6 +32,7 @@ FetchContent_Declare(
   stb_image
   GIT_REPOSITORY https://github.com/nothings/stb.git
   GIT_TAG master
+  UPDATE_DISCONNECTED TRUE
 )
 
 FetchContent_MakeAvailable(stb_image)
@@ -47,7 +50,7 @@ set(EXERCISES
     Hello3D
     TriangleTex
     SpherePhong
-   
+    M2
 )
 
 add_compile_options(-Wno-pragmas)

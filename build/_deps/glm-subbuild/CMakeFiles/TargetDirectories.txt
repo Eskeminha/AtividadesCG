@@ -1,3 +1,0 @@
-/Users/andersonkoefender/Documents/GitHub/AtividadesCG/build/_deps/glm-subbuild/CMakeFiles/glm-populate.dir
-/Users/andersonkoefender/Documents/GitHub/AtividadesCG/build/_deps/glm-subbuild/CMakeFiles/edit_cache.dir
-/Users/andersonkoefender/Documents/GitHub/AtividadesCG/build/_deps/glm-subbuild/CMakeFiles/rebuild_cache.dir
