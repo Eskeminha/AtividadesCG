@@ -46,3 +46,21 @@ Tarefa - Instanciando objetos na cena 3D.
 - `ESC` — fecha a janela
 
 ![Print da execução M2](print/print02.png)
+
+---
+
+### ✅ AV1
+Vivencial 1 (09/05/26) - Selecionando e aplicando transformações em objetos 3D.
+
+- Leitura de arquivos `.obj` e exibição de múltiplos modelos na cena
+- Seleção de objetos via `TAB` (objeto selecionado aparece em destaque)
+- Modos de transformação independentes por objeto: rotação, translação e escala
+
+**Teclas:**
+- `TAB` — seleciona o próximo objeto
+- `R` — modo rotação → `X` / `Y` / `Z` escolhe o eixo
+- `T` — modo translação → setas (X/Y) | `W` / `E` (Z)
+- `S` — modo escala → `=` aumenta | `-` diminui
+- `ESC` — fecha a janela
+
+![Print da execução AV1](print/print03.png)
