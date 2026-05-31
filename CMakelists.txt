@@ -79,6 +79,7 @@ if (NOT EXISTS ${GLAD_C_FILE})
 endif()
 
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
+
 # Cria os executáveis
 foreach(EXERCISE ${EXERCISES})
     add_executable(${EXERCISE} src/${EXERCISE}.cpp ${GLAD_C_FILE})
