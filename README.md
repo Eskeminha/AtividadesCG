@@ -10,7 +10,7 @@ Repositório com as entregas das atividades da disciplina de **Computação Grá
 
 ## Atividades
 
-### ✅ Hello3D
+### ✅ M1 - Hello3D.cpp
 Tarefa - Configuração do ambiente de desenvolvimento e execução do primeiro projeto OpenGL.
 
 - Título da janela alterado para `Ola 3D -- Anderson Koefender!`
@@ -26,7 +26,7 @@ Tarefa - Configuração do ambiente de desenvolvimento e execução do primeiro 
 
 ---
 
-### ✅ M2
+### ✅ M2 - M2.cpp
 Tarefa - Instanciando objetos na cena 3D.
 
 - Pirâmide substituída por um cubo com 6 faces, cada uma com uma cor diferente
@@ -49,7 +49,7 @@ Tarefa - Instanciando objetos na cena 3D.
 
 ---
 
-### ✅ AV1
+### ✅ AV1 - AV1.cpp
 Vivencial 1 (09/05/26) - Selecionando e aplicando transformações em objetos 3D.
 
 - Leitura de arquivos `.obj` e exibição de múltiplos modelos na cena
@@ -63,11 +63,11 @@ Vivencial 1 (09/05/26) - Selecionando e aplicando transformações em objetos 3D
 - `S` — modo escala → `=` aumenta | `-` diminui
 - `ESC` — fecha a janela
 
-![Print da execução AV1](print/print03.png)
+![GIF da execução AV1](print/print03.gif)
 
 ---
 
-### ✅ M3
+### ✅ M3 - M3.cpp
 Tarefa - Texturização de objetos 3D.
 
 - Leitura das coordenadas de textura (`vt`) do arquivo `.obj`
@@ -82,11 +82,11 @@ Tarefa - Texturização de objetos 3D.
 - `S` — modo escala → `=` aumenta | `-` diminui
 - `ESC` — fecha a janela
 
-![Print da execução M3](print/print04.png)
+![GIF da execução M3](print/print04.gif)
 
 ---
 
-### ✅ M4
+### ✅ M4 - M4.cpp
 Tarefa - Modelo de Iluminação de Phong.
 
 - Leitura das normais (`vn`) do arquivo `.obj` como atributo de vértice
@@ -104,7 +104,7 @@ Tarefa - Modelo de Iluminação de Phong.
 
 ---
 
-### ✅ AV2
+### ✅ AV2 - AV2.cpp
 Vivencial 2 (23/05/26) - Iluminação de três pontos.
 
 - 3 luzes pontuais posicionadas automaticamente a partir do objeto principal da cena
@@ -123,4 +123,28 @@ Vivencial 2 (23/05/26) - Iluminação de três pontos.
 - `3` — liga/desliga a luz de fundo (back light)
 - `ESC` — fecha a janela
 
-![Print da execução AV2](print/print06.png)
+![GIF da execução AV2](print/print06.gif)
+
+---
+
+### ✅ M5 - M5.cpp
+Tarefa - Câmera em primeira pessoa.
+
+- Implementação de uma classe `Camera` com métodos `mover()` e `rotacionar()`
+- Movimentação via teclado com velocidade baseada em deltaTime
+- Controle de orientação via mouse (yaw/pitch com clamp em ±89°)
+- Projeção perspectiva substituindo a ortográfica
+- Iluminação de Phong com três pontos e materiais por objeto herdados do AV2
+
+**Teclas/Mouse:**
+- `W` / `A` / `S` / `D` — move a câmera (frente/esquerda/trás/direita)
+- Mouse — orienta a direção da câmera
+- Scroll — zoom (ajusta o FOV)
+- `TAB` — seleciona o próximo objeto
+- `R` — modo rotação → `X` / `Y` / `Z` escolhe o eixo
+- `1` — liga/desliga a luz principal (key light)
+- `2` — liga/desliga a luz de preenchimento (fill light)
+- `3` — liga/desliga a luz de fundo (back light)
+- `ESC` — fecha a janela
+
+![GIF da execução M5](print/print07.gif)

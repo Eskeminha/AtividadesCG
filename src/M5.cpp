@@ -598,24 +598,31 @@ GLuint loadTexture(const string& path)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    stbi_set_flip_vertically_on_load(true);
-    int w, h, nrChannels;
-    unsigned char* data = stbi_load(path.c_str(), &w, &h, &nrChannels, 0);
-
-    if (data)
+    if (!path.empty())
     {
-        GLenum fmt = (nrChannels == 4) ? GL_RGBA : GL_RGB;
-        glTexImage2D(GL_TEXTURE_2D, 0, fmt, w, h, 0, fmt, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
+        stbi_set_flip_vertically_on_load(true);
+        int w, h, nrChannels;
+        unsigned char* data = stbi_load(path.c_str(), &w, &h, &nrChannels, 0);
+
+        if (data)
+        {
+            GLenum fmt = (nrChannels == 4) ? GL_RGBA : GL_RGB;
+            glTexImage2D(GL_TEXTURE_2D, 0, fmt, w, h, 0, fmt, GL_UNSIGNED_BYTE, data);
+            glGenerateMipmap(GL_TEXTURE_2D);
+        }
+        else
+        {
+            cout << "Failed to load texture " << path << endl;
+            unsigned char white[] = { 255, 255, 255, 255 };
+            glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1, 1, 0, GL_RGBA, GL_UNSIGNED_BYTE, white);
+        }
+        stbi_image_free(data);
     }
     else
     {
-        cout << "Failed to load texture " << path << endl;
         unsigned char white[] = { 255, 255, 255, 255 };
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 1, 1, 0, GL_RGBA, GL_UNSIGNED_BYTE, white);
     }
-
-    stbi_image_free(data);
     glBindTexture(GL_TEXTURE_2D, 0);
     return texID;
 }
