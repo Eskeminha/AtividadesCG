@@ -6,6 +6,18 @@ Repositório com as entregas das atividades da disciplina de **Computação Grá
 **Linguagem:** C++  
 **API Gráfica:** OpenGL 3.3+  (Feito no MacOS)
 
+## Como rodar
+
+```bash
+git clone https://github.com/Eskeminha/AtividadesCG.git
+cd AtividadesCG
+cmake -B build
+cmake --build build
+./build/<nome_do_executavel>   # ex: ./build/M5
+```
+
+> Requer: CMake 3.10+, compilador C++17 e conexão com internet na primeira build (baixa GLFW e GLM automaticamente).
+
 ---
 
 ## Atividades
