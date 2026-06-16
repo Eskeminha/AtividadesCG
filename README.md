@@ -160,3 +160,28 @@ Tarefa - Câmera em primeira pessoa.
 - `ESC` — fecha a janela
 
 ![GIF da execução M5](print/print07.gif)
+
+---
+
+### ✅ M6 - M6.cpp
+Tarefa - Trajetórias para objetos 3D.
+
+- Adição de pontos de controle via teclado para cada objeto individualmente
+- Translação cíclica do objeto pelos pontos definidos (ao chegar no último, retorna ao primeiro)
+- Velocidade de percurso baseada na distância entre pontos (1 unidade do mundo por segundo)
+- Trajetória independente por objeto, podendo ser iniciada, pausada e limpa
+
+**Teclas:**
+- `TAB` — seleciona o próximo objeto
+- `R` — modo rotação → `X` / `Y` / `Z` escolhe o eixo
+- Setas — move o objeto selecionado em X / Y
+- `Page Up` / `Page Down` — move o objeto selecionado em Z
+- `P` — adiciona a posição atual como ponto de trajetória
+- `F` — inicia/para a trajetória do objeto selecionado
+- `C` — limpa os pontos de trajetória
+- `1` — liga/desliga a luz principal (key light)
+- `2` — liga/desliga a luz de preenchimento (fill light)
+- `3` — liga/desliga a luz de fundo (back light)
+- `ESC` — fecha a janela
+
+![GIF da execução M6](print/print08.gif)
