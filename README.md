@@ -185,3 +185,34 @@ Tarefa - Trajetórias para objetos 3D.
 - `ESC` — fecha a janela
 
 ![GIF da execução M6](print/print08.gif)
+
+---
+
+### ✅ Final - Final.cpp
+Grau B - Visualizador 3D completo com cena configurável por arquivo JSON.
+
+- Cena lida de `assets/scene.json`: câmera, intensidade das luzes e lista de objetos com posição, escala e pontos de trajetória predefinidos
+- Trajetória suave com interpolação de **Catmull-Rom** (spline cúbico, curva passa pelos pontos de controle)
+- Escala uniforme controlada via teclado com limites mínimo e máximo
+- HUD com informações do objeto selecionado, modo ativo e estado das luzes
+- Todas as funcionalidades dos módulos anteriores preservadas: câmera em primeira pessoa, iluminação de três pontos, Phong, texturas, trajetória, rotação
+
+**Teclas:**
+- `W` / `A` / `S` / `D` — move a câmera
+- Mouse — orienta a câmera
+- Scroll — zoom (ajusta o FOV)
+- `TAB` — seleciona o próximo objeto
+- `R` — modo rotação → `X` / `Y` / `Z` escolhe o eixo
+- Setas — move o objeto selecionado em X / Y
+- `Page Up` / `Page Down` — move o objeto selecionado em Z
+- `[` — diminui a escala uniformemente
+- `]` — aumenta a escala uniformemente
+- `P` — adiciona a posição atual como ponto de trajetória
+- `F` — inicia/para a trajetória (Catmull-Rom)
+- `C` — limpa os pontos de trajetória
+- `1` — liga/desliga a luz principal (key light)
+- `2` — liga/desliga a luz de preenchimento (fill light)
+- `3` — liga/desliga a luz de fundo (back light)
+- `ESC` — fecha a janela
+
+![GIF da execução Final](print/print09.gif)
