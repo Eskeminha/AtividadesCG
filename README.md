@@ -216,3 +216,12 @@ Grau B - Visualizador 3D completo com cena configurável por arquivo JSON.
 - `ESC` — fecha a janela
 
 ![GIF da execução Final](print/print09.gif)
+
+---
+
+## Assets utilizados no Grau B
+
+| Asset | Fonte | Licença |
+|---|---|---|
+| Kenney Pirate Kit | [kenney.nl/assets/pirate-kit](https://kenney.nl/assets/pirate-kit) | CC0 (Domínio Público) |
+| Shark v1 | [free3d.com](https://free3d.com/3d-model/-shark-v1--334057.html) | Free for personal use |
